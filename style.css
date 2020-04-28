@@ -265,7 +265,7 @@ input {
 }
 
 .form .icon-error--first {
-  top: 1.2rem;
+  top: 1.1rem;
 }
 
 .form__submit {
@@ -315,5 +315,13 @@ input {
 
 .form__label.error .icon-error {
   display: block;
+}
+
+.form__label.success .error-msg {
+  display: none;
+}
+
+.form__label.success .icon-error {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
