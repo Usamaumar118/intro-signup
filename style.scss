@@ -1,0 +1,47 @@
+:root{
+    --c-red: hsl(0, 100%, 74%) ;
+    --c-green: hsl(154, 59%, 51%);
+    --c-blue: hsl(248, 32%, 49%);
+    --c-dark-blue: hsl(249, 10%, 26%) ;
+    --c-grayish-blue: hsl(246, 25%, 77%);
+}
+
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+html{
+    font-size: 62.5%;
+    font-family: 'raleway', sans-serif;
+    box-sizing: border-box;
+
+}
+
+
+
+h1{
+    color: var(--c-very-dark-cyan);
+    line-height: 1.5;
+}
+
+
+a{
+    text-decoration: none;
+    line-height: 1.5;
+}
+li{
+    list-style: none;
+}
+
+p{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+
