@@ -21,6 +21,19 @@ html{
     font-family: 'raleway', sans-serif;
     box-sizing: border-box;
 
+    
+    @media only screen and (min-width:2560px){
+        font-size: 80%;
+    }
+
+    @media only screen and (max-width:1506px){
+        font-size: 58%;
+    }
+
+    @media only screen and (max-width:1024px){
+        font-size: 52%;
+    }
+
 }
 
 
@@ -52,30 +65,62 @@ input{
 
 
 .container{
-    //TRY TO AVOID ME 
     height: 100vh;
     padding: 10%;
 
     background: url('images/bg-intro-desktop.png');
     background-color: var(--c-red);
+    display: flex;
+    align-items: center;
+
+    
+    @media only screen and (max-width:768px){
+        padding: 10% 5%;
+        background: url('images/bg-intro-mobile.png');
+        background-color: var(--c-red);
+    }
 }
 
 
 .intro{
     display: grid;
     grid-template-columns: 40% 50%;
+
+    @media only screen and (max-width:1024px){
+        grid-template-columns: 45% 50%;
+    }
+
+    @media only screen and (max-width:768px){
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
     justify-content: space-between;
     align-items: center;
 
     &__text{
 
-
+        @media only screen and (max-width:768px){
+            text-align: center;
+            margin-bottom: 5rem;
+        }
         &__heading{
             color: #fff;
             font-weight: 800;
             font-size: 6rem;
             line-height: 1;
             margin-bottom: 4rem;
+
+            @media only screen and (max-width:1434px){
+                font-size: 5.4rem;
+            }
+            @media only screen and (max-width:768px){
+                font-size: 4.2rem;
+            }
+            @media only screen and (max-width:725px){
+                font-size: 3.4rem;
+            }
+
         }
 
         &__para{
@@ -86,7 +131,9 @@ input{
 
 
     &__form{
-        
+        @media only screen and (max-width:768px){
+            width: 100%;
+         }
 
         &__info{
             background-color: var(--c-blue);
@@ -96,6 +143,17 @@ input{
             border-radius: 1rem;
             margin-bottom: 3rem;
             max-width: 55rem;
+            width: 100%;
+
+            @media only screen and (min-width:2560px){
+                max-width: 100%;
+            }
+            @media only screen and (max-width:768px){
+                margin-left: auto;
+                margin-right: auto;
+
+            }
+
 
 
             &__text{
@@ -103,8 +161,12 @@ input{
                 font-size: 1.8rem;
                 font-weight: 300;
 
+
                 &--bold{
                     font-weight: 700;
+                    @media only screen and (max-width:768px){
+                        display: block;
+                     }
                 }
             }
         }
@@ -116,6 +178,17 @@ input{
     border-radius: 1rem;
     padding: 4rem;
     max-width: 55rem;
+    width: 100%;
+
+
+    @media only screen and (max-width:768px){
+        padding:  2rem;
+        margin: 0 auto;
+    }
+    
+    @media only screen and (min-width:2560px){
+        max-width: 100%;
+    }
 
     &__input{
         width: 100%;
@@ -186,11 +259,18 @@ input{
         font-size: 1.2rem;
         font-weight: 600;
         color: var(--c-grayish-blue);
+
+        @media only screen and (max-width:768px){
+           text-align: center;
+        }
     
         &--bold{
             color: var(--c-red);
             font-size: 1.2rem;
             font-weight: 800;
+            @media only screen and (max-width:768px){
+                display: block;
+             }
         }
     }
 
