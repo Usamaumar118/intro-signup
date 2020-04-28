@@ -35,6 +35,7 @@ a{
     text-decoration: none;
     line-height: 1.5;
 }
+
 li{
     list-style: none;
 }
@@ -44,4 +45,153 @@ p{
     line-height: 1.5;
 }
 
+input{
+    box-sizing: inherit;
+    font-family: inherit;
+}
 
+
+.container{
+    //TRY TO AVOID ME 
+    height: 100vh;
+    padding: 10%;
+
+    background: url('images/bg-intro-desktop.png');
+    background-color: var(--c-red);
+}
+
+
+.intro{
+    display: grid;
+    grid-template-columns: 40% 50%;
+    justify-content: space-between;
+    align-items: center;
+
+    &__text{
+
+
+        &__heading{
+            color: #fff;
+            font-weight: 800;
+            font-size: 6rem;
+            line-height: 1;
+            margin-bottom: 4rem;
+        }
+
+        &__para{
+            font-weight: 600;
+            color: #fff;
+        }
+    }
+
+
+    &__form{
+        
+
+        &__info{
+            background-color: var(--c-blue);
+            box-shadow: 0 6px 0 rgba( #000000, .2);
+            text-align: center;
+            padding: 1rem;
+            border-radius: 1rem;
+            margin-bottom: 3rem;
+            max-width: 55rem;
+
+
+            &__text{
+                color: #fff;
+                font-size: 1.8rem;
+                font-weight: 300;
+
+                &--bold{
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+.form{
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 4rem;
+    max-width: 55rem;
+
+    &__input{
+        width: 100%;
+        padding: 1.5rem;
+        font-size: 1.4rem;
+        font-weight: 700;
+        outline: none;
+        border-radius: .5rem;
+        border: 1px solid var(--c-grayish-blue);
+        color: var(--c-dark-blue);
+        transition: border .3s ease-in;
+        margin-top: 1.5rem;
+
+        &--first{
+            margin-top: 0;
+        }
+
+        &:focus{
+            border-color: var(--c-dark-blue);
+        }
+
+    }
+
+    &__label{
+        position: relative;
+        display: block;
+
+    }
+
+    .error-msg{
+        text-align: right;
+        display: none;
+        padding-top: .5rem;
+        font-size: 1.4rem;
+        font-weight: 600;
+        font-style: italic;
+        color: var(--c-red);
+    }
+    .icon-error{
+        position: absolute;
+        display: none;
+        top: 30%;
+        right: 1rem;
+
+        &--first{
+            top: 17%;
+        }
+    }
+
+
+    &__submit{
+        background-color: var(--c-green);
+        border: 1px solid var(--c-green);
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        line-height: 1;
+        box-shadow: 0 4px 0 rgb(66, 168, 124);
+
+        &:focus{
+            border-color: var(--c-green);;
+        }
+    }
+
+    &__terms{
+        text-align: center;
+        margin: 2rem 0 0 ;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--c-grayish-blue);
+    
+        &--bold{
+            color: var(--c-red);
+            font-size: 1.2rem;
+            font-weight: 800;
+        }
+    }
+
+}
