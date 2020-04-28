@@ -230,11 +230,11 @@ input{
     .icon-error{
         position: absolute;
         display: none;
-        top: 30%;
+        top: 2.6rem;
         right: 1rem;
 
         &--first{
-            top: 17%;
+            top: 1.2rem;
         }
     }
 
@@ -274,4 +274,11 @@ input{
         }
     }
 
+}
+
+.form__label.error .error-msg{
+    display: block;
+}
+.form__label.error .icon-error{
+    display: block;
 }

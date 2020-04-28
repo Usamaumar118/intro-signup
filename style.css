@@ -260,12 +260,12 @@ input {
 .form .icon-error {
   position: absolute;
   display: none;
-  top: 30%;
+  top: 2.6rem;
   right: 1rem;
 }
 
 .form .icon-error--first {
-  top: 17%;
+  top: 1.2rem;
 }
 
 .form__submit {
@@ -307,5 +307,13 @@ input {
   .form__terms--bold {
     display: block;
   }
+}
+
+.form__label.error .error-msg {
+  display: block;
+}
+
+.form__label.error .icon-error {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
